@@ -44,7 +44,6 @@ function newSchedule(){
 
 // Display Train Scheduler
 function displayScheduler(child){
-
 	var tStart = moment(child.firstTrainTime, "HH:mm");
 	var tFrequency = parseInt(child.frequency);
 
