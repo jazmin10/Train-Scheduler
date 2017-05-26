@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #77B1A9;
+}
+
+img {
+	height: 120px;
+	margin-left: 10px;
+	float: left;
+}
+
+.jumbotron {
+	background-color: #346268;
+}
+
+#jumbotronHeader {
+	color: #B1E6D1;
+}
+
+p { 
+	color: white;
+}
+
+.panel {
+	border: none;
+}
+
+#schedule-panel-heading {
+	background-color: #346268;
+	border: none;
+	color: #B1E6D1;
+}
+
+#schedule-panel-body {
+	background-color: #3D7B80;
+}
+
+th {
+	color: white;
+}
+
+tbody {
+	color: #B1E6D1;
+}
+
+#add-panel-heading {
+	background-color: #346268;
+	border: none;
+	color: #B1E6D1;
+}
+
+#add-panel-body {
+	background-color: #3D7B80;
+}
+
+label {
+	color: #B1E6D1;
+}
+
+tr:hover {
+	color: #69A0AF;
+}
+
+
