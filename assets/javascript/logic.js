@@ -1,3 +1,6 @@
+// HOMEWORK #7: Train Scheduler
+
+$(document).ready(function(){
 // GLOBAL VARIABLES ==============================================
 // These variables are being used in more than one function
 var tdifference;
@@ -81,7 +84,7 @@ function calculateArrival(tStart, tFrequency){
 	// If first train time is a future time (because tDifference is negative)...
 	if (tDifference < 0) {
 		// Sets arrival time to the first train time
-		tArrival = moment(tStart).format("hh:mm A");
+		tArrival = tStart.format("hh:mm A");
 		tLeft = moment(tStart).diff(moment(), "minutes");
 
 	}
@@ -109,6 +112,9 @@ database.ref().on("child_added", function(childSnapshot){
 	var child = childSnapshot.val();
 	displayScheduler(child);
 
+}, function(errorObject){
+	console.log("Errors handled: " + errorObject.code);
+});
 });
 
 
