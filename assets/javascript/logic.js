@@ -77,13 +77,25 @@ function displayScheduler(child){
 function calculateArrival(tStart, tFrequency){
 	// Calculates the minutes between current time and first train time
 	tDifference = moment().diff(tStart, "minutes");
-	// Calculating how much time has passed by since the last train
-	tModulus = tDifference % tFrequency;
-	// Calculating minutes left
-	tLeft = tFrequency - tModulus;
-	// Calculates next arrival time
-	tArrival = moment().add(tLeft, "minutes").format("hh:mm A")
+
+	// If first train time is a future time (because tDifference is negative)...
+	if (tDifference < 0) {
+		// Sets arrival time to the first train time
+		tArrival = moment(tStart).format("hh:mm A");
+		tLeft = moment(tStart).diff(moment(), "minutes");
+
+	}
+	// Otherwise, calculate next arrival time
+	else {
+		// Calculating how much time has passed by since the last train
+		tModulus = tDifference % tFrequency;
+		// Calculating minutes left
+		tLeft = tFrequency - tModulus;
+		// Calculates next arrival time
+		tArrival = moment().add(tLeft, "minutes").format("hh:mm A")
+	}
 }
+
 
 // MAIN PROCESSES ==============================================
 // Grab new train schedule
