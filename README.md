@@ -8,18 +8,18 @@ For this application, I created a train schedule application that incorporates F
 
 #### Setup
 
-    1. Make sure that your app suits this basic spec:
-        * When adding trains, administrators should be able to submit the following:
-            * Train Name
-            * Destination
-            * First Train Time -- in military time
-            * Frequency -- in minutes
-    2. Code this app to calculate when the next train will arrive; this should be relative to the current time.
-    3. Users from many different machines must be able to view same train times.
-    4. Styling and theme are completely up to you. Get Creative!
+1. Make sure that your app suits this basic spec:
+    * When adding trains, administrators should be able to submit the following:
+        * Train Name
+        * Destination
+        * First Train Time -- in military time
+        * Frequency -- in minutes
+2. Code this app to calculate when the next train will arrive; this should be relative to the current time.
+3. Users from many different machines must be able to view same train times.
+4. Styling and theme are completely up to you. Get Creative!
 
 #### Example Site
 
-    ![sampleSite](assets/images/Train_Time_Image.png)
+![sampleSite](assets/images/Train_Time_Image.png)
             
 
