@@ -85,6 +85,7 @@ function calculateArrival(tStart, tFrequency){
 	if (tDifference < 0) {
 		// Sets arrival time to the first train time
 		tArrival = tStart.format("hh:mm A");
+		// Perhaps this should be tLeft = tStart.diff(moment(), "minutes");
 		tLeft = moment(tStart).diff(moment(), "minutes");
 
 	}
