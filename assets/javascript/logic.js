@@ -1,4 +1,4 @@
-// HOMEWORK #7: Train Scheduler
+// Train Scheduler
 
 $(document).ready(function(){
 // GLOBAL VARIABLES ==============================================
